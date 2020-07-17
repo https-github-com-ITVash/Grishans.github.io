@@ -95,7 +95,8 @@ body {
 .header_wrap .header_contenet {
     display: -webkit-flex;
     display: flex;
-    max-width: 1170px;
+    width: 100%;
+    margin: 0 16%;
     justify-content: space-between;
     align-items: center;
 }
@@ -397,9 +398,14 @@ section.footer .address {
     font-size: 14px;
     line-height: 1;
 }
-.copir{
-  align-self: flex-end;
-  margin-bottom: 10px;
+.copir a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copir a p{
+  margin-top: 0;
 }
 
 section.footer .footer_nav {
@@ -660,8 +666,7 @@ section.services .red_box_wrap .red_box {
 
 h1.why_we {
     display: flex;
-    padding: 0;
-    justify-content: center;
+    
 }
 
 
@@ -1736,7 +1741,16 @@ section.main_content_new .right_content_new {
   font-family: "comfReg";
   font-size: 12px;
   color: #fff;
-  width: 160px;
+  width: 155px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  opacity: 0.7;
+  line-height: 1.3;
+  padding-left: 15px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
 }
 .slick_slider-arrow{
   position: absolute;
@@ -2136,6 +2150,9 @@ section.main_content_new .right_content_new {
 
 @media all and (max-width: 900px) {
   
+  .slick_slider-arrow{
+    display: none;
+  }
   
   .aboutCompanyImg {
         display: none;
@@ -2322,7 +2339,7 @@ section.main_content_new .right_content_new {
     .main_content section.why_are_we {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        
         align-items: center;
     }
 
@@ -2679,7 +2696,9 @@ section.main_content_new .right_content_new {
   }
 }
 @media (max-width: 800px){
-  
+  .why_are_we a{
+    margin: 20px 50px;
+  }
 }
 
 
@@ -2865,10 +2884,6 @@ section.main_content_new .right_content_new {
         height: 50px;
     }
 
-    h1.why_we {
-        font-size: 10pt;
-    }
-
     .header_wrap .header_contenet button.search {
         font-size: 10pt;
         width: 60px;
@@ -2876,6 +2891,10 @@ section.main_content_new .right_content_new {
 
     .header_wrap .header_contenet button.search img {
         display: none;
+    }
+  
+    .why_are_we a{
+      margin: 20px 25px;
     }
 }
 
